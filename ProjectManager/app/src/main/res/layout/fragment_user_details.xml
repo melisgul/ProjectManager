@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.melis.myapplication.UserDetails"
+    android:background="@color/backgroundColor">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Person ID: "
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>,
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surname: "
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+
+        <TextView
+            android:id="@+id/currentProjectsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Projects: "
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="180dp">
+
+        <TextView
+            android:id="@+id/personIdInfoAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>,
+
+        <TextView
+            android:id="@+id/nameInfoAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+
+        <TextView
+            android:id="@+id/surnameInfoAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+
+        <TextView
+            android:id="@+id/departmentInfoAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+
+        <TextView
+            android:id="@+id/currentProjectsInfoAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/whiteColor"/>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/personalInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@color/whiteColor">
+    </ListView>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="color|reference"/>
+    <attr name="blackColor" format="color|reference"/>
+    <attr name= "whiteColor" format="color|reference"/>
+    <attr name="purpleRowColor" format="color|reference"/>
+</resources>

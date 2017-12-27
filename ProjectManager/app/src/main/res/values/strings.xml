@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="project_info_id">Project id: </string>
+    <string name="project_info_name">Project Name: </string>
+    <string name="project_info_start_date">Project Start Date: </string>
+    <string name="project_info_end_date">Project End Date: </string>
+    <string name="project_progressbar">Project Progress: </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="projecthour">Total Project Hour:</string>
+    <string name="enteredhour">Entered Project Hour:</string>
+    <string name="invalidlogn">Invalid username or password.</string>
+
+</resources>
