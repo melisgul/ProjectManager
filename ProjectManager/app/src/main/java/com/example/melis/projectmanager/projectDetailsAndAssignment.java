@@ -3,6 +3,7 @@ package com.example.melis.projectmanager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,8 +57,16 @@ public class projectDetailsAndAssignment extends Fragment implements View.OnClic
     public void delayProjectPage(){
         System.out.print("delay it!");
     }
+
     public void changeResponsible(){
-        System.out.print("change responsible");
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        ChangeResponsible changeResponsible = new ChangeResponsible();
+        Bundle bundle = new Bundle();
+        bundle.putString("projectId",comingProject.getProjectID().toString());
+        changeResponsible.setArguments(bundle);
+        transaction.replace(R.id.main_frame_layout,changeResponsible);
+        transaction.addToBackStack(changeResponsible.getClass().getName());
+        transaction.commit();
     }
 
     @Override

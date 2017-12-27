@@ -69,7 +69,7 @@ public class Person {
         }
         return false;
     }
-    public int getProjectCounter(){return this.projectCounter;}
+    public Integer getProjectCounter(){return this.projectCounter;}
 
     public String getUsername(){
         return this.username;

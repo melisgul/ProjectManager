@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Application</string>
+    <string name="app_name">Project Manager</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="project_info_id">Project id: </string>

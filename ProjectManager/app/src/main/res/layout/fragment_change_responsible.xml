@@ -1,13 +1,63 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.melis.myapplication.ChangeResponsible">
+    tools:context="com.example.melis.projectmanager.ChangeResponsible"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Responsible: "
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currentResponsibleAssignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/whiteColor"
+        android:text="People that can be assigned to this project: "
+        android:layout_marginLeft="10dp"/>
 
-</FrameLayout>
+
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/availablePeopleList"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="30dp">
+    </ListView>
+
+
+
+    <Button
+        android:id="@+id/assignButton"
+        android:layout_width="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_height="wrap_content"
+        android:text="Assign"
+        android:background="@drawable/rounded_editbutton"/>
+
+</LinearLayout>
